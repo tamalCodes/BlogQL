@@ -67,7 +67,25 @@ $lightGreen: #b9e7e7;
     //NAVBAR
 
     .navbar {
+      // position: fixed;
+      // z-index: 9999;
+      // background-color: aliceblue;
+      // width: 70%;
+      // padding: 0 2rem;
+
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-bottom: 10px;
+      padding-top: 10px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15);
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      padding: 0 2rem;
+      width: 70%;
+     
       .container {
+        position: sticky;
         padding: 10px 0px;
         display: flex;
         align-items: center;
@@ -163,9 +181,9 @@ $lightGreen: #b9e7e7;
           display: flex;
           gap: 100px;
 
-          &:nth-child(2n + 1) {
-            flex-direction: row-reverse;
-          }
+          // &:nth-child(2n + 1) {
+          //   flex-direction: row-reverse;
+          // }
 
           .img {
             flex: 2;
